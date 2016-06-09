@@ -5,8 +5,7 @@ A `<VLCPlayer>` component for react-native
 
 VLCPlayer 支持各种格式(mp4,m3u8,flv,mov,rtsp,rtmp,etc.)，具体参看[vlc wiki][3]
 
-![暂停](1.png =200x)
-![播放](2.png =200x)
+![暂停](1.png)
 
 ### Add it to your project
 
