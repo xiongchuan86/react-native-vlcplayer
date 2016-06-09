@@ -13,11 +13,10 @@
 		00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302DC1ABCB9D200DB3ED1 /* libRCTNetwork.a */; };
 		00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302E41ABCB9EE00DB3ED1 /* libRCTVibration.a */; };
 		00E356F31AD99517003FC87E /* vlcplayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* vlcplayerTests.m */; };
-		0C2B974A1D07F490007E68B1 /* libRCTVLCPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C1A0EF81D07EFEC00441684 /* libRCTVLCPlayer.a */; };
-		0C2B977B1D07FD19007E68B1 /* MobileVLCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2B977A1D07FD19007E68B1 /* MobileVLCKit.framework */; };
 		0C2B977D1D07FDC1007E68B1 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2B977C1D07FDC1007E68B1 /* VideoToolbox.framework */; };
 		0C2B977F1D07FDD7007E68B1 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2B977E1D07FDD7007E68B1 /* libiconv.tbd */; };
 		0C2B97A11D094B54007E68B1 /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2B97A01D094B47007E68B1 /* libART.a */; };
+		0CB94E1D1D098D1400D4A823 /* MobileVLCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB94E1C1D098D1400D4A823 /* MobileVLCKit.framework */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
 		139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139FDEF41B06529B00C62182 /* libRCTWebSocket.a */; };
@@ -34,6 +33,7 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		93B638B69D834147A91BDD93 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BC522021841448D960E6EF9 /* FontAwesome.ttf */; };
 		C33D3C9B571C453680088BAB /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E75D9B3500A4492AB91BCBB8 /* Zocial.ttf */; };
+		CA6E7B8E05034DA3B1AC6898 /* libRCTVLCPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C498BD8C02814AEB801B919C /* libRCTVLCPlayer.a */; };
 		CD49F309841C4B9ABEDFDD6C /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B93CA16C3FC2463F87E97159 /* Foundation.ttf */; };
 		D9B018E21F514FAAB310A9DB /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 203B47B8936945FAA543CC74 /* Ionicons.ttf */; };
 /* End PBXBuildFile section */
@@ -81,13 +81,6 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = vlcplayer;
 		};
-		0C1A0EF71D07EFEC00441684 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0C1A0EF31D07EFEC00441684 /* RCTVLCPlayer.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0CA30C441D07E0DB003B09F9;
-			remoteInfo = RCTVLCPlayer;
-		};
 		0C2B97991D092CB7007E68B1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46BFE0274CFB46E0A8644627 /* RNVectorIcons.xcodeproj */;
@@ -101,6 +94,13 @@
 			proxyType = 2;
 			remoteGlobalIDString = 0CF68AC11AF0540F00FF9E5C;
 			remoteInfo = ART;
+		};
+		0CB94E361D098D4B00D4A823 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8BBE3E9554C240AFA07C8FC9 /* RCTVLCPlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0CA30C441D07E0DB003B09F9;
+			remoteInfo = RCTVLCPlayer;
 		};
 		139105C01AF99BAD00B5F7CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -149,11 +149,10 @@
 		00E356EE1AD99517003FC87E /* vlcplayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vlcplayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* vlcplayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vlcplayerTests.m; sourceTree = "<group>"; };
-		0C1A0EF31D07EFEC00441684 /* RCTVLCPlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVLCPlayer.xcodeproj; path = "../node_modules/react-native-vlcplayer/ios/RCTVLCPlayer.xcodeproj"; sourceTree = "<group>"; };
-		0C2B977A1D07FD19007E68B1 /* MobileVLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileVLCKit.framework; path = "../../../../../Downloads/vlc/MobileVLCKit-binary/MobileVLCKit.framework"; sourceTree = "<group>"; };
 		0C2B977C1D07FDC1007E68B1 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		0C2B977E1D07FDD7007E68B1 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		0C2B979B1D094B47007E68B1 /* ART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ART.xcodeproj; path = "../node_modules/react-native/Libraries/ART/ART.xcodeproj"; sourceTree = "<group>"; };
+		0CB94E1C1D098D1400D4A823 /* MobileVLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileVLCKit.framework; path = "../../../../../../Downloads/vlc/MobileVLCKit-binary/MobileVLCKit.framework"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* vlcplayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vlcplayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,9 +168,11 @@
 		60274862D2AB48B78454DB34 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		8BBE3E9554C240AFA07C8FC9 /* RCTVLCPlayer.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RCTVLCPlayer.xcodeproj; path = "../node_modules/react-native-vlcplayer/ios/RCTVLCPlayer.xcodeproj"; sourceTree = "<group>"; };
 		9BC522021841448D960E6EF9 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		B93CA16C3FC2463F87E97159 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		C13C2068AF5541C3B55CBC93 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		C498BD8C02814AEB801B919C /* libRCTVLCPlayer.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRCTVLCPlayer.a; sourceTree = "<group>"; };
 		CCACA4B135994666A1ACFE52 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		CF5347D5C0664C4F8AF1453E /* libRNVectorIcons.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNVectorIcons.a; sourceTree = "<group>"; };
 		E75D9B3500A4492AB91BCBB8 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
@@ -190,6 +191,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB94E1D1D098D1400D4A823 /* MobileVLCKit.framework in Frameworks */,
 				0C2B977F1D07FDD7007E68B1 /* libiconv.tbd in Frameworks */,
 				0C2B977D1D07FDC1007E68B1 /* VideoToolbox.framework in Frameworks */,
 				146834051AC3E58100842450 /* libReact.a in Frameworks */,
@@ -198,14 +200,13 @@
 				00C302E81ABCBA2D00DB3ED1 /* libRCTImage.a in Frameworks */,
 				133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */,
 				00C302E91ABCBA2D00DB3ED1 /* libRCTNetwork.a in Frameworks */,
-				0C2B977B1D07FD19007E68B1 /* MobileVLCKit.framework in Frameworks */,
-				0C2B974A1D07F490007E68B1 /* libRCTVLCPlayer.a in Frameworks */,
 				139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */,
 				0C2B97A11D094B54007E68B1 /* libART.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				1C866C7487394FCAB425504B /* libRNVectorIcons.a in Frameworks */,
+				CA6E7B8E05034DA3B1AC6898 /* libRCTVLCPlayer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,14 +270,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0C1A0EF41D07EFEC00441684 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0C1A0EF81D07EFEC00441684 /* libRCTVLCPlayer.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		0C2B978B1D092CB7007E68B1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -289,6 +282,14 @@
 			isa = PBXGroup;
 			children = (
 				0C2B97A01D094B47007E68B1 /* libART.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CB94E2A1D098D4B00D4A823 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CB94E371D098D4B00D4A823 /* libRCTVLCPlayer.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -343,7 +344,6 @@
 			isa = PBXGroup;
 			children = (
 				0C2B979B1D094B47007E68B1 /* ART.xcodeproj */,
-				0C1A0EF31D07EFEC00441684 /* RCTVLCPlayer.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
 				00C302B51ABCB90400DB3ED1 /* RCTGeolocation.xcodeproj */,
@@ -355,6 +355,7 @@
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				46BFE0274CFB46E0A8644627 /* RNVectorIcons.xcodeproj */,
+				8BBE3E9554C240AFA07C8FC9 /* RCTVLCPlayer.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -370,9 +371,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				0CB94E1C1D098D1400D4A823 /* MobileVLCKit.framework */,
 				0C2B977E1D07FDD7007E68B1 /* libiconv.tbd */,
 				0C2B977C1D07FDC1007E68B1 /* VideoToolbox.framework */,
-				0C2B977A1D07FD19007E68B1 /* MobileVLCKit.framework */,
 				13B07FAE1A68108700A75B9A /* vlcplayer */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* vlcplayerTests */,
@@ -510,8 +511,8 @@
 					ProjectRef = 00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */;
 				},
 				{
-					ProductGroup = 0C1A0EF41D07EFEC00441684 /* Products */;
-					ProjectRef = 0C1A0EF31D07EFEC00441684 /* RCTVLCPlayer.xcodeproj */;
+					ProductGroup = 0CB94E2A1D098D4B00D4A823 /* Products */;
+					ProjectRef = 8BBE3E9554C240AFA07C8FC9 /* RCTVLCPlayer.xcodeproj */;
 				},
 				{
 					ProductGroup = 139FDEE71B06529A00C62182 /* Products */;
@@ -570,13 +571,6 @@
 			remoteRef = 00C302E31ABCB9EE00DB3ED1 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		0C1A0EF81D07EFEC00441684 /* libRCTVLCPlayer.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libRCTVLCPlayer.a;
-			remoteRef = 0C1A0EF71D07EFEC00441684 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		0C2B979A1D092CB7007E68B1 /* libRNVectorIcons.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -589,6 +583,13 @@
 			fileType = archive.ar;
 			path = libART.a;
 			remoteRef = 0C2B979F1D094B47007E68B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0CB94E371D098D4B00D4A823 /* libRCTVLCPlayer.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRCTVLCPlayer.a;
+			remoteRef = 0CB94E361D098D4B00D4A823 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		139105C11AF99BAD00B5F7CC /* libRCTSettings.a */ = {
@@ -727,6 +728,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/vlcplayer.app/vlcplayer";
@@ -743,6 +745,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -771,6 +774,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.xiongchuan.examples.vlcplayer;
 				PRODUCT_NAME = vlcplayer;
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 			};
@@ -796,6 +800,7 @@
 					"-ObjC",
 					"-lc++",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.xiongchuan.examples.vlcplayer;
 				PRODUCT_NAME = vlcplayer;
 				VALID_ARCHS = "arm64 armv7 armv7s x86_64";
 			};

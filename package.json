@@ -7,10 +7,10 @@
   "author": "xiongchuan<xiongchuan86@vip.qq.com> (https://github.com/xiongchuan86)",
   "files": [
     "ios/RCTVLCPlayer.xcodeproj",
-    "ios/RCTVLCPlayer.h",
-    "ios/RCTVLCPlayer.m",
-    "ios/RCTVLCPlayerManager.h",
-    "ios/RCTVLCPlayerManager.m",
+    "ios/RCTVLCPlayer/RCTVLCPlayer.h",
+    "ios/RCTVLCPlayer/RCTVLCPlayer.m",
+    "ios/RCTVLCPlayer/RCTVLCPlayerManager.h",
+    "ios/RCTVLCPlayer/RCTVLCPlayerManager.m",
     "VLCPlayer.js"
   ],
   "devDependencies": {
