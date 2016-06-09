@@ -1,10 +1,14 @@
 {
   "name": "react-native-vlcplayer",
   "version": "0.1.0",
-  "description": "A <VLCPlayer /> element for react-native",
+  "description": "A <VLCPlayer /> element for react-native,For Mobile",
   "main": "VLCPlayer.js",
   "license": "MIT",
-  "author": "xiongchuan<xiongchuan86@vip.qq.com> (https://github.com/xiongchuan86)",
+  "keywords": [
+    "vlcplayer",
+    "video",
+    "player"
+  ],
   "files": [
     "ios/RCTVLCPlayer.xcodeproj",
     "ios/RCTVLCPlayer/RCTVLCPlayer.h",
@@ -13,6 +17,15 @@
     "ios/RCTVLCPlayer/RCTVLCPlayerManager.m",
     "VLCPlayer.js"
   ],
+  "author": {
+    "name": "xiongchuan",
+    "email": "xiongchuan86@vip.qq.com"
+  },
+  "homepage": "https://github.com/xiongchuan86/react-native-vlcplayer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiongchuan86/react-native-vlcplayer.git"
+  },
   "devDependencies": {
 
   },
