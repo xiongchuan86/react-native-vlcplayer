@@ -1,0 +1,11 @@
+node_modules/**/*
+ios/RCTVLCPlayer.xcodeproj/xcuserdata/**/*
+ios/RCTVLCPlayer.xcodeproj/project.xcworkspace/**/*
+Examples/vlcplayer/node_modules/**/*
+Examples/vlcplayer/ios/vlcplayer.xcodeproj/project.xcworkspace/**/*
+Examples/vlcplayer/ios/vlcplayer.xcodeproj/xcuserdata/**/*
+Examples/vlcplayer/node_modules
+npm-debug.log
+.DS_Store
+build/
+.gradle/

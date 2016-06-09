@@ -1,0 +1,16 @@
+{
+  "name": "vlcplayer",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start"
+  },
+  "dependencies": {
+    "react": "^15.1.0",
+    "react-native": "^0.27.1",
+    "react-native-loader": "^1.1.0",
+    "react-native-progress": "^3.0.0",
+    "react-native-vector-icons": "^2.0.3",
+    "react-native-vlcplayer": "../../"
+  }
+}
