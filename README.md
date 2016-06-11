@@ -18,6 +18,8 @@ Install [rnpm](https://github.com/rnpm/rnpm) and run `rnpm link react-native-vlc
 
 
 ## Usage
+- 安装`MobileVLCKit.framework`,在[nightlies.videolan.org/build/ios/](nightlies.videolan.org/build/ios/) 下载最新版，解压后在你的工程里面引入`MobileVLCKit.framework`，并且添加 framework search path
+- 使用vlcplayer  
 这是一个极其简单的VLC播放器，默认是不带控制条和进度条，但是完全可以通过回调实现自己需要的样式的播放器，参看例子[Examples vlcplayer][2]
 
 ```
@@ -25,7 +27,7 @@ Install [rnpm](https://github.com/rnpm/rnpm) and run `rnpm link react-native-vlc
     ref='vlcplayer'
     paused={this.state.paused}  //通过paused设置player play or pause的状态
     style={styles.vlcplayer}
-    source={{uri:this.props.uri,initOptions:['--codec=avcodec']}} //uri，可以是vlc支持的串流，或者普通的url,initOptions VLC支持的初始化选项 ,See [vlc 命令行参数][1]
+    source={{uri:this.props.uri,initOptions:['--codec=avcodec']}} 
     onProgress={this.onProgress.bind(this)} //进度回调
     onEnded={this.onEnded.bind(this)} //结束回调，一般使用stopped即可
     onStopped={this.onEnded.bind(this)} //停止回调
@@ -35,6 +37,7 @@ Install [rnpm](https://github.com/rnpm/rnpm) and run `rnpm link react-native-vlc
  />
  
 ```
+//source.uri，可以是vlc支持的串流，或者普通的url,source.initOptions VLC支持的初始化选项 ,See [vlc 命令行参数][1]
 
 ## Static Methods
 
