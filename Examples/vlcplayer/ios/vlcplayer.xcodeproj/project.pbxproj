@@ -17,7 +17,7 @@
 		0C2B977F1D07FDD7007E68B1 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2B977E1D07FDD7007E68B1 /* libiconv.tbd */; };
 		0C2B97A11D094B54007E68B1 /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2B97A01D094B47007E68B1 /* libART.a */; };
 		0C965DFF1D0D4DAA0057679D /* RCTOrientation in Resources */ = {isa = PBXBuildFile; fileRef = 0C965DFE1D0D4DAA0057679D /* RCTOrientation */; };
-		0C965E011D0D4E5E0057679D /* Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C965E001D0D4E5E0057679D /* Orientation.m */; };
+		0C965E081D0D7EB90057679D /* libRNFS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C965E071D0D7EA80057679D /* libRNFS.a */; };
 		0CB94E1D1D098D1400D4A823 /* MobileVLCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB94E1C1D098D1400D4A823 /* MobileVLCKit.framework */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
@@ -97,6 +97,13 @@
 			remoteGlobalIDString = 0CF68AC11AF0540F00FF9E5C;
 			remoteInfo = ART;
 		};
+		0C965E061D0D7EA80057679D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C965E021D0D7EA70057679D /* RNFS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F12AFB9B1ADAF8F800E0535D;
+			remoteInfo = RNFS;
+		};
 		0CB94E361D098D4B00D4A823 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8BBE3E9554C240AFA07C8FC9 /* RCTVLCPlayer.xcodeproj */;
@@ -155,7 +162,7 @@
 		0C2B977E1D07FDD7007E68B1 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		0C2B979B1D094B47007E68B1 /* ART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ART.xcodeproj; path = "../node_modules/react-native/Libraries/ART/ART.xcodeproj"; sourceTree = "<group>"; };
 		0C965DFE1D0D4DAA0057679D /* RCTOrientation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RCTOrientation; path = "../node_modules/react-native-orientation/RCTOrientation"; sourceTree = "<group>"; };
-		0C965E001D0D4E5E0057679D /* Orientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Orientation.m; path = "../node_modules/react-native-orientation/RCTOrientation/Orientation.m"; sourceTree = "<group>"; };
+		0C965E021D0D7EA70057679D /* RNFS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNFS.xcodeproj; path = "../node_modules/react-native-fs/RNFS.xcodeproj"; sourceTree = "<group>"; };
 		0CB94E1C1D098D1400D4A823 /* MobileVLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileVLCKit.framework; path = "../../../../../../Downloads/vlc/MobileVLCKit-binary/MobileVLCKit.framework"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
@@ -208,6 +215,7 @@
 				0C2B97A11D094B54007E68B1 /* libART.a in Frameworks */,
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				0C965E081D0D7EB90057679D /* libRNFS.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				1C866C7487394FCAB425504B /* libRNVectorIcons.a in Frameworks */,
 				CA6E7B8E05034DA3B1AC6898 /* libRCTVLCPlayer.a in Frameworks */,
@@ -290,6 +298,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		0C965E031D0D7EA70057679D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C965E071D0D7EA80057679D /* libRNFS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		0CB94E2A1D098D4B00D4A823 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -347,6 +363,7 @@
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				0C965E021D0D7EA70057679D /* RNFS.xcodeproj */,
 				0C2B979B1D094B47007E68B1 /* ART.xcodeproj */,
 				146833FF1AC3E56700842450 /* React.xcodeproj */,
 				00C302A71ABCB8CE00DB3ED1 /* RCTActionSheet.xcodeproj */,
@@ -375,7 +392,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				0C965E001D0D4E5E0057679D /* Orientation.m */,
 				0C965DFE1D0D4DAA0057679D /* RCTOrientation */,
 				0CB94E1C1D098D1400D4A823 /* MobileVLCKit.framework */,
 				0C2B977E1D07FDD7007E68B1 /* libiconv.tbd */,
@@ -529,6 +545,10 @@
 					ProjectRef = 146833FF1AC3E56700842450 /* React.xcodeproj */;
 				},
 				{
+					ProductGroup = 0C965E031D0D7EA70057679D /* Products */;
+					ProjectRef = 0C965E021D0D7EA70057679D /* RNFS.xcodeproj */;
+				},
+				{
 					ProductGroup = 0C2B978B1D092CB7007E68B1 /* Products */;
 					ProjectRef = 46BFE0274CFB46E0A8644627 /* RNVectorIcons.xcodeproj */;
 				},
@@ -589,6 +609,13 @@
 			fileType = archive.ar;
 			path = libART.a;
 			remoteRef = 0C2B979F1D094B47007E68B1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		0C965E071D0D7EA80057679D /* libRNFS.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNFS.a;
+			remoteRef = 0C965E061D0D7EA80057679D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		0CB94E371D098D4B00D4A823 /* libRCTVLCPlayer.a */ = {
@@ -695,7 +722,6 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				0C965E011D0D4E5E0057679D /* Orientation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

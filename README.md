@@ -54,6 +54,12 @@ Run `npm install react-native-vlcplayer --save`
 this.refs['vlcplayer'].seek(0.333); //单位是 0~1 的百分比
 ```
 
+`snapshot(path)`
+
+```
+this.refs['vlcplayer'].snapshot(path); //保存截图
+```
+
 ## Examples
 
 - 进入 [移动播放器][2]  
@@ -101,9 +107,9 @@ AppRegistry.registerComponent('vlcplayer', () => vlcplayer);
 
 ## TODOS
 
-- [] Add support for Android
-- [] Add support for snapshot
-- [] Add support for record
+- [ ] Add support for Android
+- [x] Add support for snapshot
+- [ ] Add support for record
 - [x] Add support for A full-featured player
 
 

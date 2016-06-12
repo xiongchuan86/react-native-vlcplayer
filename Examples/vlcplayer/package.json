@@ -8,6 +8,7 @@
   "dependencies": {
     "react": "^15.1.0",
     "react-native": "^0.27.1",
+    "react-native-fs": "^1.5.1",
     "react-native-loader": "^1.1.0",
     "react-native-orientation": "^1.16.0",
     "react-native-progress": "^3.0.0",

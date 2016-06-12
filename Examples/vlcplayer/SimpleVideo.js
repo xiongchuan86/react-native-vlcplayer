@@ -12,6 +12,7 @@ import * as Progress from 'react-native-progress';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { Bars } from 'react-native-loader';
 import Slider from 'react-native-slider';
+var RNFS = require('react-native-fs');
 
 const playerDefaultHeight   = 250;
 const playerDefaultWidth    = Dimensions.get('window').width;
@@ -24,7 +25,6 @@ export default class SimpleVideo extends Component {
 
   constructor(props) {
     super(props);
-
     this.state = {
       progress: 0,
       indeterminate: true,
@@ -59,6 +59,7 @@ export default class SimpleVideo extends Component {
 
   render() {
     let defaultControlsView = this.defaultControlsView();
+    let actionButton = this.actionButton();
     return (
       <View style={styles.container}>
         <VLCPlayer
@@ -74,8 +75,23 @@ export default class SimpleVideo extends Component {
         onPaused={this.onPaused.bind(this)}
          />
         {defaultControlsView}
+        {actionButton}
       </View>
     );
+  }
+
+  actionButton()
+  {
+    return (
+      <Icon.Button onPress={this.saveVideoSnapshot.bind(this)} name="download" color={'green'} size={80}>save a snapshot</Icon.Button>
+    );
+  }
+
+  saveVideoSnapshot()
+  {
+    let path = RNFS.DocumentDirectoryPath + '/1.png';
+    console.warn("saveVideoSnapshot path="+path);
+    this.refs['vlcplayer'].snapshot(path);
   }
 
   pause()

@@ -13,11 +13,28 @@ class vlcplayer extends Component {
 
   render() {
     const uri = 'http://cdn.goluk.cn/video/t1_2.mp4';
+    let simplevideo = this.renderSimpleVideo(uri);
+    let video       = null;//this.renderVideo(uri);
+    return (
+      <View>
+      {simplevideo}
+      {video}
+      </View>
+    );
+  }
+
+  renderSimpleVideo(uri){
     return (
       <View>
       <SimpleVideo uri={uri} buttonSize={50} />
       <Text>A Simple Player</Text>
-      <View style={{marginTop:50}} />
+      </View>
+    );
+  }
+
+  renderVideo(uri){
+    return (
+      <View>
       <Video uri={uri} />
       <Text>A full-featured player</Text>
       </View>

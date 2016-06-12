@@ -204,8 +204,12 @@ static NSString *const playbackRate = @"rate";
             [_player setPosition:pos];
         }
     }
+}
 
-
+-(void)setSnapshotPath:(NSString*)path
+{
+  if(_player)
+    [_player saveVideoSnapshotAt:path withWidth:0 andHeight:0];
 }
 
 -(void)setRate:(float)rate
