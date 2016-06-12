@@ -197,7 +197,7 @@ static NSString *const playbackRate = @"rate";
         [_player jumpForward:interval];
 }
 
--(void)setPosition:(float)pos
+-(void)setSeek:(float)pos
 {
     if([_player isSeekable]){
         if(pos>=0 && pos <= 1){

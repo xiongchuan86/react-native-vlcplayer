@@ -32,8 +32,8 @@ export default class VLCPlayer extends Component {
     this._root.setNativeProps(nativeProps);
   }
 
-  seek(time) {
-    this.setNativeProps({ position: time });
+  seek(pos) {
+    this.setNativeProps({ seek:  pos});
   }
 
   _assignRoot(component) {
@@ -65,7 +65,6 @@ export default class VLCPlayer extends Component {
   }
 
   _onStopped(event) {
-    console.warn("set paused xx");
     this.setNativeProps({ paused: true });
     if (this.props.onStopped) {
       this.props.onStopped(event.nativeEvent);
@@ -115,7 +114,7 @@ export default class VLCPlayer extends Component {
 VLCPlayer.propTypes = {
   /* Native only */
   rate: PropTypes.number,
-  position:PropTypes.number,
+  seek:PropTypes.number,
   fullscreen: PropTypes.bool,
   paused: PropTypes.bool,
 
