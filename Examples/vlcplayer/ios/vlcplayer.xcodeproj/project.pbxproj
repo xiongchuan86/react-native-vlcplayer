@@ -16,6 +16,8 @@
 		0C2B977D1D07FDC1007E68B1 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2B977C1D07FDC1007E68B1 /* VideoToolbox.framework */; };
 		0C2B977F1D07FDD7007E68B1 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2B977E1D07FDD7007E68B1 /* libiconv.tbd */; };
 		0C2B97A11D094B54007E68B1 /* libART.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C2B97A01D094B47007E68B1 /* libART.a */; };
+		0C965DFF1D0D4DAA0057679D /* RCTOrientation in Resources */ = {isa = PBXBuildFile; fileRef = 0C965DFE1D0D4DAA0057679D /* RCTOrientation */; };
+		0C965E011D0D4E5E0057679D /* Orientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C965E001D0D4E5E0057679D /* Orientation.m */; };
 		0CB94E1D1D098D1400D4A823 /* MobileVLCKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB94E1C1D098D1400D4A823 /* MobileVLCKit.framework */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
 		139105C61AF99C1200B5F7CC /* libRCTSettings.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 139105C11AF99BAD00B5F7CC /* libRCTSettings.a */; };
@@ -152,6 +154,8 @@
 		0C2B977C1D07FDC1007E68B1 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
 		0C2B977E1D07FDD7007E68B1 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
 		0C2B979B1D094B47007E68B1 /* ART.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ART.xcodeproj; path = "../node_modules/react-native/Libraries/ART/ART.xcodeproj"; sourceTree = "<group>"; };
+		0C965DFE1D0D4DAA0057679D /* RCTOrientation */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RCTOrientation; path = "../node_modules/react-native-orientation/RCTOrientation"; sourceTree = "<group>"; };
+		0C965E001D0D4E5E0057679D /* Orientation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Orientation.m; path = "../node_modules/react-native-orientation/RCTOrientation/Orientation.m"; sourceTree = "<group>"; };
 		0CB94E1C1D098D1400D4A823 /* MobileVLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileVLCKit.framework; path = "../../../../../../Downloads/vlc/MobileVLCKit-binary/MobileVLCKit.framework"; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
 		139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTWebSocket.xcodeproj; path = "../node_modules/react-native/Libraries/WebSocket/RCTWebSocket.xcodeproj"; sourceTree = "<group>"; };
@@ -371,6 +375,8 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				0C965E001D0D4E5E0057679D /* Orientation.m */,
+				0C965DFE1D0D4DAA0057679D /* RCTOrientation */,
 				0CB94E1C1D098D1400D4A823 /* MobileVLCKit.framework */,
 				0C2B977E1D07FDD7007E68B1 /* libiconv.tbd */,
 				0C2B977C1D07FDC1007E68B1 /* VideoToolbox.framework */,
@@ -648,6 +654,7 @@
 				93B638B69D834147A91BDD93 /* FontAwesome.ttf in Resources */,
 				CD49F309841C4B9ABEDFDD6C /* Foundation.ttf in Resources */,
 				D9B018E21F514FAAB310A9DB /* Ionicons.ttf in Resources */,
+				0C965DFF1D0D4DAA0057679D /* RCTOrientation in Resources */,
 				403E1FEC1B7346559B3FA70E /* MaterialIcons.ttf in Resources */,
 				29C92F7DACFB48B4AADE1220 /* Octicons.ttf in Resources */,
 				C33D3C9B571C453680088BAB /* Zocial.ttf in Resources */,
@@ -688,6 +695,7 @@
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				0C965E011D0D4E5E0057679D /* Orientation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
