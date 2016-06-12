@@ -42,12 +42,16 @@ Run `npm install react-native-vlcplayer --save`
 ```
 //source.uri，可以是vlc支持的串流，或者普通的url,source.initOptions VLC支持的初始化选项 ,See [vlc 命令行参数][1]
 
+## FullScreen ##
+需要用到 `npm install react-native-orientation --save` ，工程配置参看[https://github.com/yamill/react-native-orientation](https://github.com/yamill/react-native-orientation)  
+具体使用方法，参看`vlcplayer/Video.js`
+
 ## Static Methods
 
 `seek(seconds)`
 
 ```
-this.refs['vlcplayer'].seek(1); //单位是 0~1 的百分比
+this.refs['vlcplayer'].seek(0.333); //单位是 0~1 的百分比
 ```
 
 ## Examples
