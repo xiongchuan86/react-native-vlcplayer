@@ -144,6 +144,7 @@ export default class Video extends Component {
       this.refs['windowView'].setNativeProps({style:[{
         width:Dimensions.get('window').width,
         height:Dimensions.get('window').height,
+        position:'',
       }]});
       this.refs['vlcplayer'].setNativeProps({style:[styles.vlcplayer,this.state.customStyle]});
       this.setState({customTrackStyle:{width:(Dimensions.get('window').height-120)}});
@@ -153,6 +154,9 @@ export default class Video extends Component {
       this.refs['windowView'].setNativeProps({style:[{
         height:Dimensions.get('window').width,
         width:Dimensions.get('window').height,
+        position:'absolute',
+        left:0,
+        top:0
       }]});
       this.refs['vlcplayer'].setNativeProps({style:[{
         height:Dimensions.get('window').width,
