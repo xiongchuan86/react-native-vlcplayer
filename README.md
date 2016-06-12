@@ -5,7 +5,8 @@ A `<VLCPlayer>` component for react-native
 
 VLCPlayer 支持各种格式(mp4,m3u8,flv,mov,rtsp,rtmp,etc.)，具体参看[vlc wiki][3]
 
-![暂停](1.png)
+![播放器例子](1.png)
+![全屏模式](2.png)
 
 ### Add it to your project
 
@@ -13,14 +14,16 @@ Run `npm install react-native-vlcplayer --save`
 
 #### iOS
 
-Install [rnpm](https://github.com/rnpm/rnpm) and run `rnpm link react-native-vlcplayer`
+- Install [rnpm](https://github.com/rnpm/rnpm) and run `rnpm link react-native-vlcplayer`
+
+- 安装`MobileVLCKit.framework`,在[nightlies.videolan.org/build/ios/](nightlies.videolan.org/build/ios/) 下载最新版，解压后在你的工程里面引入`MobileVLCKit.framework`，并且添加 framework search path
 
 
 
 ## Usage
-- 安装`MobileVLCKit.framework`,在[nightlies.videolan.org/build/ios/](nightlies.videolan.org/build/ios/) 下载最新版，解压后在你的工程里面引入`MobileVLCKit.framework`，并且添加 framework search path
-- 使用vlcplayer  
-这是一个极其简单的VLC播放器，默认是不带控制条和进度条，但是完全可以通过回调实现自己需要的样式的播放器，参看例子[Examples vlcplayer][2]
+
+
+这是一个极其简单的VLC播放器，默认是不带控制条和进度条，但是完全可以通过回调实现自己需要的样式的播放器，参看例子[Examples vlcplayer][2]，包括一个简单播放器和一个全功能播放器。
 
 ```
 <VLCPlayer
@@ -55,12 +58,49 @@ this.refs['vlcplayer'].seek(1); //单位是 0~1 的百分比
 - 同时需要安装`ART`   
 参考[https://github.com/oblador/react-native-vector-icons][4]
 
+可以根据自己的情况使用下面的例子，自己DIY播放器  
+- `<SimpleVideo />` 一个简单的播放器  
+- `<Video />` 一个全功能的播放器
+
+```
+import React, { Component } from 'react';
+import {
+ AppRegistry,
+ View,
+ Text
+} from 'react-native';
+import SimpleVideo  from './SimpleVideo.js';
+import Video  from './Video.js';
+
+
+
+class vlcplayer extends Component {
+
+  render() {
+    const uri = 'http://cdn.goluk.cn/video/t1_2.mp4';
+    return (
+      <View>
+      <SimpleVideo uri={uri} buttonSize={50} />
+      <Text>A Simple Player</Text>
+      <View style={{marginTop:50}} />
+      <Video uri={uri} />
+      <Text>A full-featured player</Text>
+      </View>
+    );
+  }
+}
+
+AppRegistry.registerComponent('vlcplayer', () => vlcplayer);
+
+```
+
 
 ## TODOS
 
-- [ ] Add support for Android
-- [ ] Add support for snapshot
-- [ ] Add support for record
+- [] Add support for Android
+- [] Add support for snapshot
+- [] Add support for record
+- [x] Add support for A full-featured player
 
 
 ## 加入ReactNative讨论组  
